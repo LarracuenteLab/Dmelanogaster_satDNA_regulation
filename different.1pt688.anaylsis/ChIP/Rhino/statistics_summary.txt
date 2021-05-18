@@ -1,0 +1,41 @@
+1) each 1.688 subfamily
+
+Repeat	N	mean	sd	se
+dual	20	9.0825	10.8433452	2.4246457
+eu	5	1.5460	0.9441292	0.4222274
+SAT	25	3.7004	2.9050538	0.5810108
+uni	9	1.6000	0.6404491	0.2134830
+
+     SAT   uni   dual uni  0.010 -     -    dual 0.051 0.010 -    eu   0.010 0.913 0.010
+
+
+
+2) combining all subfamilies to 1.688
+
+Repeat	N	mean	sd	se
+SAT	10	3.9330	3.4822791	1.1011933
+uni	10	1.6400	0.6169279	0.1950897
+dual	20	9.0825	10.8433452	2.4246457
+eu	5	1.5460	0.9441292	0.4222274
+
+    SAT   uni   dual uni  0.082 -     -    dual 0.082 0.019 -    eu   0.082 0.847 0.019
+
+
+
+3a) discrete loci based on uniquely mapped reads
+
+Repeat	N	mean	sd	se
+SAT	25	4.696400	4.4099933	0.8819987
+uni	9	1.693333	0.6294243	0.2098081
+dual	20	9.082500	10.8433452	2.4246457
+eu	5	1.546000	0.9441292	0.4222274
+
+     SAT    uni    dual  uni  0.0098 -      -     dual 0.1225 0.0101 -     eu   0.0098 0.7652 0.01013b) discrete loci based on all mapped reads
+
+Repeat	N	mean	sd	se
+SAT	25	4.1804	3.1323786	0.6264757
+uni	10	1.6400	0.6169279	0.1950897
+dual	20	9.0825	10.8433452	2.4246457
+eu	5	1.5460	0.9441292	0.4222274
+
+     SAT    uni    dual  uni  0.0035 -      -     dual 0.0760 0.0096 -     eu   0.0061 0.8468 0.0096

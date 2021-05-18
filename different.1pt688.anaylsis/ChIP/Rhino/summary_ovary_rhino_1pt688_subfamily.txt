@@ -1,0 +1,17 @@
+#study #repeat #chip/input(RPM)
+ovary_Parhad_rhino 359bp_SAT 8.83
+ovary_Parhad_rhino 260bp_SAT 7.69
+ovary_Parhad_rhino 356bp_SAT 7.24
+ovary_Parhad_rhino 353bp_SAT 9.67
+ovary_Parhad_rhino 359bp_SAT 2.10
+ovary_Parhad_rhino 260bp_SAT 2.37
+ovary_Parhad_rhino 356bp_SAT 2.37
+ovary_Parhad_rhino 353bp_SAT 2.03
+ovary_Theurkauf_2014_w1_rhino 359bp_SAT 1.21
+ovary_Theurkauf_2014_w1_rhino 260bp_SAT 1.43
+ovary_Theurkauf_2014_w1_rhino 356bp_SAT 1.38
+ovary_Theurkauf_2014_w1_rhino 353bp_SAT 1.16
+ovary_Theurkauf_2014_oregonR_rhino 359bp_SAT 2.46
+ovary_Theurkauf_2014_oregonR_rhino 260bp_SAT 2.66
+ovary_Theurkauf_2014_oregonR_rhino 356bp_SAT 2.57
+ovary_Theurkauf_2014_oregonR_rhino 353bp_SAT 2.46

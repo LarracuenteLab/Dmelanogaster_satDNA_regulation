@@ -1,0 +1,13 @@
+#study #repeat #chip/input(RPM)
+ovary_Mohn_H3K9me3 359bp_SAT 12.99
+ovary_Mohn_H3K9me3 260bp_SAT 15.11
+ovary_Mohn_H3K9me3 356bp_SAT 9.32
+ovary_Mohn_H3K9me3 353bp_SAT 10.46
+ovary_Klenov_H3K9me3 359bp_SAT 0.92
+ovary_Klenov_H3K9me3 260bp_SAT 0.91
+ovary_Klenov_H3K9me3 356bp_SAT 0.95
+ovary_Klenov_H3K9me3 353bp_SAT 0.90
+ovary_Le.Thomas_H3K9me3 359bp_SAT 3.71
+ovary_Le.Thomas_H3K9me3 260bp_SAT 3.80
+ovary_Le.Thomas_H3K9me3 356bp_SAT 3.64
+ovary_Le.Thomas_H3K9me3 353bp_SAT 3.95

@@ -1,0 +1,6 @@
+#study #repeat #chip/input(RPM)
+ovary_Parhad_rhino 1pt688_SAT 8.76
+ovary_Parhad_rhino 1pt688_SAT 2.09
+ovary_Theurkauf_2014_w1_rhino 1pt688_SAT 1.19
+ovary_Theurkauf_2014_oregonR_rhino 1pt688_SAT 2.46
+ovary_Mohn_rhino 1pt688_SAT 2.85

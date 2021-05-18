@@ -1,0 +1,4 @@
+#study #repeat #chip/input(RPM)
+ovary_Mohn_H3K9me3 1pt688_SAT   11.31
+ovary_Klenov_H3K9me3 1pt688_SAT	0.91
+ovary_Le.Thomas_H3K9me3	1pt688_SAT	3.69

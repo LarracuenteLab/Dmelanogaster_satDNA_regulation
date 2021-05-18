@@ -5,24 +5,23 @@ library(ggplot2)
 #read in file
 
 #norm by miRNA
-count_all<-read.table("summary-rhino-cuff-deadlock-moon.var.log2FC.combined_norm_miRNA.txt",header=F)
-count_all<-read.table("summary-primary-production.var.log2FC_norm_miRNA.txt",header=F)
-count_all<-read.table("summary-pingpong.var.log2FC_norm_miRNA.txt",header=F)
+count<-read.table("summary-rhino-cuff-deadlock-moon.log2FC_norm_miRNA.txt",header=F)
+count<-read.table("summary-primary-production.log2FC_norm_miRNA.txt",header=F)
+count<-read.table("summary-pingpong.log2FC_norm_miRNA.txt",header=F)
 
-count <-count_all[count_all$V3!='353bp_SAT' & count_all$V3!='356bp_SAT', ]
 count$V3 <- factor(count$V3, 
-                   levels=c("Rsp_SAT","260bp_SAT","359bp_SAT","piRNA_cluster_20A","piRNA_cluster_flamenco","piRNA_cluster_42AB","piRNA_cluster_80F","piRNA_cluster_38C1","piRNA_cluster_38C2"), 
-                   labels = c("Rsp","260bp","359bp","20A","flamenco","42AB","80F","38C1","38C2"))
+                   levels=c("Rsp_SAT","1pt688_SAT","piRNA_cluster_20A","piRNA_cluster_flamenco","piRNA_cluster_42AB","piRNA_cluster_80F","piRNA_cluster_38C1","piRNA_cluster_38C2"), 
+                   labels = c("Rsp","1.688","20A","flamenco","42AB","80F","38C1","38C2"))
 
 ##OR
 #norm by flam
-count_all<-read.table("summary-rhino-cuff-deadlock-moon.var.log2FC.combined_norm_flam.txt",header=F)
-count_all<-read.table("summary-pingpong.var.log2FC_norm_flam.txt",header=F)
+count_all<-read.table("summary-rhino-cuff-deadlock-moon.log2FC_norm_flam.txt",header=F)
+count_all<-read.table("summary-pingpong.log2FC_norm_flam.txt",header=F)
 
-count <-count_all[count_all$V3!='piRNA_cluster_flamenco'& count_all$V3!='353bp_SAT' & count_all$V3!='356bp_SAT', ]
+count <-count_all[count_all$V3!='piRNA_cluster_flamenco', ]
 count$V3 <- factor(count$V3, 
-                   levels=c("Rsp_SAT","260bp_SAT","359bp_SAT","piRNA_cluster_20A","piRNA_cluster_flamenco","piRNA_cluster_42AB","piRNA_cluster_80F","piRNA_cluster_38C1","piRNA_cluster_38C2"), 
-                   labels = c("Rsp","260bp","359bp","20A","flamenco","42AB","80F","38C1","38C2"))
+                   levels=c("Rsp_SAT","1pt688_SAT","piRNA_cluster_20A","piRNA_cluster_flamenco","piRNA_cluster_42AB","piRNA_cluster_80F","piRNA_cluster_38C1","piRNA_cluster_38C2"), 
+                   labels = c("Rsp","1.688","20A","flamenco","42AB","80F","38C1","38C2"))
 
 #order rows
 ########

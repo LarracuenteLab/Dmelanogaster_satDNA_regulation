@@ -1,0 +1,13 @@
+#study #repeat #chip/input(RPM)
+ovary_Mohn_H3K9me3 1pt688.2L_2_260bp_locus	19.00
+ovary_Mohn_H3K9me3 1pt688.3L_locus	19.17
+ovary_Mohn_H3K9me3 1pt688.Contig101_locus	17.75
+ovary_Mohn_H3K9me3 1pt688.Contig9_locus	15.01
+ovary_Klenov_H3K9me3 1pt688.2L_2_260bp_locus	1.15
+ovary_Klenov_H3K9me3 1pt688.3L_locus	1.17
+ovary_Klenov_H3K9me3 1pt688.Contig101_locus	1.02
+ovary_Klenov_H3K9me3 1pt688.Contig9_locus	1.15
+ovary_Le.Thomas_H3K9me3 1pt688.2L_2_260bp_locus	3.96
+ovary_Le.Thomas_H3K9me3 1pt688.3L_locus	4.37
+ovary_Le.Thomas_H3K9me3 1pt688.Contig101_locus	3.92
+ovary_Le.Thomas_H3K9me3 1pt688.Contig9_locus	4.83
