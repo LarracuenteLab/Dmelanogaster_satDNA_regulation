@@ -1,4 +1,6 @@
-#This script takes count and col info file output from summarize_multi_count_for_DESeq2.py, and run DESeq2 with them.
+#This script takes count and col info file output from summarize_multi_count_for_DESeq2.py, 
+#and run DESeq2.
+#example usage: Rscript DESeq2.R "name.countData" "name.colData" "name.csv"
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 
 library("DESeq2")

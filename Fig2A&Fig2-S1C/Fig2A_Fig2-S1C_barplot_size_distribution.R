@@ -1,9 +1,13 @@
+##########
+#R script to make Figure 2A and Figure 2-figure supplement 1C. Plot showing 
+#the size distribution of Rsp/1.688 small RNAs in testes and ovaries.
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+########
 
 library(ggplot2)
 library(dplyr)
 
-# change 1.688 to Rsp for plotting Rsp
+# This is for plotting 1.688. Change 1.688 to Rsp for plotting Rsp
 
 count_ovary=read.table("ovary_1.688.size",header=FALSE)
 count_ovary$tissue="ovary"

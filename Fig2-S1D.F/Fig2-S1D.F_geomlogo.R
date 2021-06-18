@@ -1,9 +1,15 @@
+#############
+#R script to make Figure 2-figure supplement 1D&F. Plot showing the relative 
+#nucleotide bias of each position in small RNAs from Rsp and 1.688 satellite 
+#in ovary.
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+#############
 
 library(ggplot2)
 library(ggseqlogo)
 library(dplyr)
 
+#read in "ovary_1.688_24nt.txt" for 1.688, and "ovary_Rsp_24nt.txt" for Rsp.
 reads=read.table("ovary_1.688_24nt.txt",header=FALSE)
 reads_vector <- as.vector(reads$V1)
 

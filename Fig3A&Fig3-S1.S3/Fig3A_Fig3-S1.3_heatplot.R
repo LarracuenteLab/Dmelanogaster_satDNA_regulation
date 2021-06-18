@@ -1,8 +1,13 @@
+##########
+#R script to make Figure 3 and Figure 3-figure supplement 1 and 3. Plot showing
+#the quantification of small RNA abundance from piRNA pathway mutants for satDNAs 
+#and piRNA clusters, normalized to the miRNA, or flamenco piRNA cluster.
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+########
 
 library(ggplot2)
 
-#read in file
+#read in one of the following files
 
 #norm by miRNA
 count<-read.table("summary-rhino-cuff-deadlock-moon.log2FC_norm_miRNA.txt",header=F)
@@ -23,7 +28,7 @@ count$V3 <- factor(count$V3,
                    levels=c("Rsp_SAT","1pt688_SAT","piRNA_cluster_20A","piRNA_cluster_flamenco","piRNA_cluster_42AB","piRNA_cluster_80F","piRNA_cluster_38C1","piRNA_cluster_38C2"), 
                    labels = c("Rsp","1.688","20A","flamenco","42AB","80F","38C1","38C2"))
 
-#order rows
+#order the rows in the plots
 ########
 #1 RDC
 count$V2 <- factor(count$V2, 
@@ -38,7 +43,6 @@ count$V2 <- factor(count$V2,
 #3 pingpong
 count$V2 <- factor(count$V2, 
                    levels=rev(c("Ago3","Aub_1","Aub_2","Aub_3","Krimper_1","Krimper_2","SpnE_1","SpnE_2","Vasa_1","Vasa_2","UAP56","UAP56-oxidized","Piwi_1","Piwi_2","Piwi_3")))
-
 
 
 #plot

@@ -1,13 +1,14 @@
 #!/bin/bash
 
 """
-This script count number of reads mapped to each strand.
+This script count the number of reads mapped to each strand of Rsp and 1.688 satellite DNA.
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 
 module load samtools
 module load anaconda3/5.2.0
 
+#define your working directory
 workingdir=$(pwd)
 echo "Working in dir: $workingdir"
 

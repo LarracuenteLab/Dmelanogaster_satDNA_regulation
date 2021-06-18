@@ -1,6 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+This script generate input countData and colData files for DESeq2.
+example usage: python3 summarize_multi_count_for_DESeq2.py -n "name" -s "study_design" -c "control_1.out" "control_2.out" -t "treatment_1.out" "treatment_2.out" -o "name" 
+use -h for the help page with different optional arguments you can choose with this script.
+  -h, --help            show this help message and exit
+  -n NAME, --name NAME  target protein in the study
+  -s STUDY, --study STUDY
+                        tab delaminated file listing the study coresponding to
+                        each data, used when data come from different studies.
+                        1st column is study name, 2nd column is data name
+                        separated by comma.
+  -c [CONTROL [CONTROL ...]], --control [CONTROL [CONTROL ...]]
+                        list of files from control condition
+  -t TREATED [TREATED ...], --treated TREATED [TREATED ...]
+                        list of files from treated condition
+  -o OUTPUT, --output OUTPUT
+                        output file
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 

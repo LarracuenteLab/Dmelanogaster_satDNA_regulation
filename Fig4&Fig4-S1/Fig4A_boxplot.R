@@ -1,4 +1,9 @@
+##########
+#R script to make Figure 4A. Plot showing the log2 fold change of H3K9me3 ChIP/input 
+#enrichment scores in piwi embryonic knockdown ovaries compared to control. P-values 
+#are estimated by one sample t-test (mu=0) with FDR corrections (Benjamini and Hochberg 1995).
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+########
 
 library(ggplot2)
 library(dplyr)

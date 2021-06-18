@@ -2,6 +2,7 @@
 #This script takes the count (wc -l) file and draw barplot based on col1 and col2
 #This is an adapted script for lendis of piTargets mapping, and calculate 41th Z score
 #Version: Yu Sun, 2016-12-02
+#Sun Yu (ysun43@UR.Rochester.edu)
 
 args <- commandArgs(TRUE)
 Name <- args[1]

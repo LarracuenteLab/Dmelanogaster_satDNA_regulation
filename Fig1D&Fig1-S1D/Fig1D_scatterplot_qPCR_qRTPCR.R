@@ -1,4 +1,10 @@
-#@author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+###########
+#R script to make Figure 1D. Plot showing qPCR and qRT-PCR quantification of Rsp 
+#copy number and expression level, respectively, of strains used in northern blot 
+#in Figure 1C. A linear regression line is shown in the plot with red dotted line 
+#(Pearson’s correlation coefficient r2= 0.98, p-value=0.003)
+#author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+###########
 
 library(ggplot2)
 library(dplyr)

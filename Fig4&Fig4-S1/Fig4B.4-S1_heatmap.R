@@ -1,9 +1,15 @@
+##########
+#R script to make Figure 4B and Figure 4-figure supplement 1. Plot showing the 
+#log2 fold change of small (Figure 4B) total (Figure 4-figure supplement 1) RNA 
+#abundance in piwi embryonic knockdown ovaries compared to control. Adjusted 
+#p-values for the total RNA (Figure 4-figure supplement 1) are reported by DESeq2. 
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+########
 
 library(ggplot2)
 library(dplyr)
 
-#total RNA
+#total RNA (Figure 4-figure supplement 1)
 count_all=read.csv("summary-totalRNA-embryonic-piwiKD.csv",header=T)
 count <- count_all
 count$repeatID <- factor(count$repeatID, 
@@ -18,7 +24,7 @@ ggplot(count, aes(repeatID,protein)) +
 dev.off()
 
 
-#small RNA
+#small RNA (Figure 4B)
 count_all=read.table("smallRNA_norm_miRNA_embryonic_piwiKD.log2FC.txt",header=F)
 count <- count_all
 count$V3 <- factor(count$V3, 

@@ -1,13 +1,14 @@
 #!/bin/bash
 
 """
-This script run DESeq2 with count files to get differential expression results.
+This script run DESeq2 with read count files.
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 
 module load anaconda3/5.2.0
 module load r/3.5.1
 
+#define working directory
 workingdir=$(pwd)
 echo "Working in dir: $workingdir"
 

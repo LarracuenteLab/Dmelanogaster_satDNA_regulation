@@ -1,13 +1,15 @@
 #!/bin/bash
 
 """
-This script count and extract reads that mapped to repeats from alignment files.
+This script count and extract reads that mapped to repeats in a annotation gff file (eg. Rsp, 1.688 satellite) from alignment bam files.
+example usage: count.sh 
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 
 module load samtools/1.5
 module load anaconda3/5.2.0
 
+#define your working directory
 workingdir=""
 cd $workingdir || ( echo "can't open the $workingdir"; exit )
 echo "Working in dir: $workingdir"
@@ -17,6 +19,7 @@ echo "Working in dir: $workingdir"
 #reads="SRR..."
 FASTQLIST=$workingdir/FASTQLIST.txt
 
+#this is the annotation gff file
 REFERENCEGFF="dmel_scaffold2_plus0310_rm_for_htseq.gff3"
 
 mkdir $workingdir/extract_reads
@@ -40,7 +43,7 @@ while FASTQLIST='' read -r reads || [[ -n "$reads" ]]; do
 
 
 ###
-#count using customized python script
+#count number of reads mapped to repeats in the gff file using customized python script
 ###
 	
 	count_out=$workingdir/count/${samplename}
@@ -49,7 +52,7 @@ while FASTQLIST='' read -r reads || [[ -n "$reads" ]]; do
 
 
 ###
-#normalize to miRNA/flam
+#normalize read counts to miRNA/flam
 ###
 	
 	#normalize to miRNA
@@ -66,7 +69,7 @@ while FASTQLIST='' read -r reads || [[ -n "$reads" ]]; do
 
 	
 ###
-#extract reads mapped to a feature
+#extract reads mapped to a specific repeat using customized python script
 ###
 
 	extract_out=$workingdir/extract_reads/${samplename}

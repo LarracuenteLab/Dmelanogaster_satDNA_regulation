@@ -1,7 +1,7 @@
 #!/bin/bash
 
 """
-This script uses piPipe ((Han, et al. 2015)) to calculate ping-pong score.
+This script uses piPipe ((Han, et al. 2015)) to calculate ping-pong score for Rsp and 1.688 satellite DNAs for Figure 2-figure supplement 1E&G.
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 
@@ -11,6 +11,7 @@ module load samtools/1.5
 module load bowtie/1.2.1.1 
 module load anaconda3/5.2.0
 
+#define your working directory
 workingdir=""
 cd $workingdir || ( echo "can't open the $workingdir"; exit )
 echo "Working in dir: $workingdir"

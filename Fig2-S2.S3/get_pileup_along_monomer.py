@@ -1,6 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+This script gets the read distribution along a repeat monomer from blast output file.
+example usage: python3 get_pileup_along_monomer.py -l repeat_monomer_length -i "Rsp_vs_consensus.blast" -o "Rsp_vs_monomer.distrib"
+use -h for the help page with different optional arguments you can choose with this script.
+  -h, --help            show this help message and exit
+  -l LENGTH, --length LENGTH
+                        repeat monomer length
+  -n TOTAL, --total TOTAL
+                        total mapped reads
+  -i INPUT, --input INPUT
+                        input .blast file
+  -o OUTPUT, --output OUTPUT
+                        output .distrib file
 @author: xiaolu_wei@urmc.rochester.edu
 """
 

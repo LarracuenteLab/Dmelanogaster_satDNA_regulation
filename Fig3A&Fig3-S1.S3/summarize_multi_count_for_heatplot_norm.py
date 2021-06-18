@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-This script calculate log2fc from input count files.
+This script calculate log2fc from input count files from different genotypes, designed for 
+features including ('Rsp','1.688','20A','flamenco','42AB','38C1','38C2','80F').
+optional arguments:
+  -h, --help            show this help message and exit
+  -n NAME, --name NAME  name of the protein targeted
+  -s STUDY, --study STUDY
+                        name of the file with study design info
+  -c [CONTROL [CONTROL ...]], --control [CONTROL [CONTROL ...]]
+                        list of files from control condition
+  -t TREATMENT [TREATMENT ...], --treatment TREATMENT [TREATMENT ...]
+                        list of files from treatment
+  -o OUTPUT, --output OUTPUT
+                        output log2FC file
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 

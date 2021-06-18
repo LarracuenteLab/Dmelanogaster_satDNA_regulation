@@ -1,7 +1,7 @@
 #!/bin/bash
 
 """
-This script get reads alignment depth for each strand.
+This script get reads alignment depth for each strand of Rsp major locus and 1.688 2L locus (260-bp).
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 

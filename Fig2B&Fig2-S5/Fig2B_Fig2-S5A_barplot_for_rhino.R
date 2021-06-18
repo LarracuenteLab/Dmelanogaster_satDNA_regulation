@@ -1,4 +1,11 @@
+##########
+#R script to make Figure 2B and Figure 2-figure supplement 5A. Figure 2B showing 
+#Rhino ChIP-seq enrichment scores for satDNAs, uni-strand (uni) piRNA clusters, 
+#dual-strand (dual) and euchromatin (eu). P-values are estimated by pairwise 
+#t-tests with FDR correction (Benjamini 1995). Figure 2-figure supplement 5A showing
+#the enrichment scores for each satDNA and piRNA cluster.
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+########
 
 library(ggplot2)
 library(plyr)
@@ -6,7 +13,9 @@ library(plyr)
 count_all=read.table("summary_ovary_rhino.txt",header=FALSE)
 summary(count_all)
 
-#boxplot
+#####
+#Figure 2-figure supplement 5A
+#####
 count <- count_all
 count$V2 <- factor(count$V2, 
                    levels=c("Rsp_SAT","1pt688_SAT","1pt688.2L_2_260bp_locus","1pt688.3L_locus","1pt688.Contig101_locus","1pt688.Contig9_locus","piRNA_cluster_20A","piRNA_cluster_flamenco","piRNA_cluster_42AB","piRNA_cluster_80F","piRNA_cluster_38C1","piRNA_cluster_38C2","euchromatin"), 
@@ -41,6 +50,9 @@ ggplot(count, aes(V2, V3))+
 dev.off()
 
 
+#####
+#Figure 2B 
+#####
 ##combined plot
 count <- count_all
 count$V4 <- ifelse(count$V2=="piRNA_cluster_flamenco" | count$V2=="piRNA_cluster_20A", "uni", 
@@ -78,12 +90,11 @@ ggplot(count_sum, aes(V4, mean))+
   theme(legend.title = element_blank())
 dev.off()
 
-##################
 
 #significant test
 
-##pairwise t.test
 #Bartlett test of homogeneity of varianc
 bartlett.test(V3 ~ V4, data=count)  #p-value = 2.021e-12
+##pairwise t.test
 pairwise.t.test(x=count$V3, g=count$V4, p.adjust.method="BH", pool.sd=FALSE)
 

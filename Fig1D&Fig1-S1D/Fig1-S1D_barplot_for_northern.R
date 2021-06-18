@@ -1,4 +1,9 @@
+############
+#R script to make Figure 1-supplement 1D. Plot showing the Northern signal 
+#quantification of Rsp transcript abundance  in different fly strains in 
+#Figure 1C.
 #@author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+###########
 
 library(ggplot2)
 

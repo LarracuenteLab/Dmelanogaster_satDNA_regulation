@@ -1,7 +1,7 @@
 #!/bin/bash
 
 """
-This script run DESeq2 with count files to get differential expression results.
+This script run DESeq2 with read count files for Supllementary file 9 (total RNA).
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 

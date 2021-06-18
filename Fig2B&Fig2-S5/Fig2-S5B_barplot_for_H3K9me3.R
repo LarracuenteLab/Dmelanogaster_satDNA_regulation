@@ -1,4 +1,8 @@
+##########
+#R script to make Figure 2-figure supplement 5B. Plot showing the H3K9me3 ChIP-seq 
+#enrichment scores for each satDNA and piRNA cluster.
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+########
 
 library(ggplot2)
 library(plyr)

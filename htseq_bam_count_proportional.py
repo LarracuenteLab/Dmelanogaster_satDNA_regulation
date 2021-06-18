@@ -2,6 +2,17 @@
 # -*- coding: utf-8 -*-
 """
 This script count reads mapped to repeat features from alignment files.
+example usage: python3 htseq_bam_count_proportional.py alignment.bam annotation.gff count.out
+use -h for the help page with different optional arguments you can choose with this script.
+  -h, --help            show this help message and exit
+  -p, --paired          sequencing reads are paired end
+  -f {bam,sam}, --format {bam,sam}
+                        alignment file is bam or sam format
+  -i ATTRIBUTE, --attribute ATTRIBUTE
+                        GFF attribute to be used as feature ID. Provide it
+                        only if there are multiple ID attributes in the last
+                        column and the ID attributes are separated by ';'.
+  -s, --sep_size        output two files for si/piRNA based on read length 
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 

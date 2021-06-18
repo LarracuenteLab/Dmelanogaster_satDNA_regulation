@@ -1,9 +1,16 @@
+##########
+#R script to make Figure 3B and C. Figure 3B showing qPCR estimate of Rsp copy 
+#number in wild types and mutants. Figure 3C showing qRT-PCR estimate of Rsp 
+#transcript level in mutants compared to wild types. P-values are calculated by
+#Student’s t-test.
+#author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+########
+
 library(ggplot2)
 library(dplyr)
 
-#moon.rhi.mutant
 
-#bar plot
+#Figure 3B (bar plot)
 
 count=read.csv("moon.rhi.mutant.DNA.qPCR.csv",header=FALSE)
 summary(count)
@@ -34,7 +41,7 @@ ggplot(count_sum, aes(factor(V1,levels=c("w1118","w1-OregonR","moon mutant","rhi
 dev.off()
 
 
-#boxplot
+#Figure 3C (boxplot)
 
 count=read.csv("moon.rhi.mutant.RNA.qRT-PCR.csv",header=FALSE)
 summary(count)

@@ -2,6 +2,20 @@
 # -*- coding: utf-8 -*-
 """
 This script extract reads that map to a repeat feature of interest, output fastq format.
+example usage: python3 extract_sequence_by_feature_gff.py -t "RepeatName" alignment.bam annotation.gff output.fq
+use -h for the help page with different optional arguments you can choose with this script.
+  -h, --help            show this help message and exit
+  -f {bam,sam}, --format {bam,sam}
+                        alignment file is bam or sam format
+  -i ATTRIBUTE, --attribute ATTRIBUTE
+                        GFF attribute to be used as feature ID. Provide it
+                        only if there are multiple ID attributes in the last
+                        column and the ID attributes are separated by ';'.
+  -t TARGET, --target TARGET
+                        target feature which you are interested in extracting
+                        sequence reads mapped to it
+  -s {RF,FR,R,F}, --stranded {RF,FR,R,F}
+                        if the sequencing is stranded or not
 @author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 

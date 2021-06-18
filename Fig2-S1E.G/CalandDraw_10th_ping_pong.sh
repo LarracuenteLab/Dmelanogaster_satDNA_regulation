@@ -3,6 +3,7 @@
 #This is a ping-pong analysis pipeline to calculate 10th seld ping-pong from BED2, and draw the figure.
 #Version: Yu Sun, 2016-12-02
 #Version: Yu Sun, 2017-02-15, add all-zero tolerant
+#Sun Yu (ysun43@UR.Rochester.edu)
 
 if [ ! -n "$1" ]
 then

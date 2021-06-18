@@ -1,4 +1,8 @@
+###########
+#R script to make Figure 2–figure supplement 2 & 3. Plot showing read distribution
+#along repeat consensus sequences.
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+##########
 
 library(ggplot2)
 library(dplyr)

@@ -1,12 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-@author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
-"""
 
 """
-This script takes fasta files as input. 
-"extract_sequence_by_feature_gff.py" output fastq format files, and fastq files then can be reformated into fasta files.
+This script takes fasta files as input, and summarize the length distribution.
+To get the size distribution of a specific repeat element (eg. Rsp), use 
+"extract_sequence_by_feature_gff.py" to output fastq format file, and then 
+reformate it into fasta file as input for this script.
+
+use -h for the help page with different optional arguments you can choose with this script.
+  -h, --help            show this help message and exit
+  -i INPUT [INPUT ...], --input INPUT [INPUT ...]
+                        list of input fasta file
+  -o OUTPUT, --output OUTPUT
+                        output file name, output file is tab deliminated file
+                        with two columns of size and its percentage
+
+@author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
 """
 
 from argparse import ArgumentParser

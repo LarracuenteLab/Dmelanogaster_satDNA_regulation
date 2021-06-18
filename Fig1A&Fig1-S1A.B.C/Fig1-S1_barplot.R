@@ -1,4 +1,10 @@
-#@author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+################
+#R script to make Figure 1A and Figure 1-figure supplement 1A-C. Plots showing 
+#satDNA expression levels in RPM (reads per million) across tissues and 
+#developmental stages.
+#author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+###############
+
 
 library(ggplot2)
 library(dplyr)

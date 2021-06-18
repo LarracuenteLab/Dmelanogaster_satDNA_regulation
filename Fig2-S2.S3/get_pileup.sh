@@ -8,6 +8,7 @@ This script extract reads from alignment files, blast to repeat consensus sequen
 module load blast/2.6.0+ 
 module load anaconda3/5.2.0
 
+#define your working directory
 workingdir=""
 cd $workingdir || ( echo "can't open the $workingdir"; exit )
 echo "Working in dir: $workingdir"

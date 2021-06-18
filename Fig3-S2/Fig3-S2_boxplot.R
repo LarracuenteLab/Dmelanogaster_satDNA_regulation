@@ -1,20 +1,27 @@
+##########
+#R script to make Figure 3-figure supplement 2. Plot showing the quantification 
+#of total RNA abundance for piRNA clusters in RDC (A) and Rhi/Moon (B) mutant 
+#ovaries relative to wild type (log2 fold change of 1-kb windows).
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+########
 
 library(ggplot2)
 
+#read in "count_unique_1kbwindow_new.csv.summary_RDC_piRNAclusters" for (A) and
+#"count_unique_1kbwindow.csv.summary_Rhi_Moon_piRNAclusters" for (B).
 count=read.csv("count_unique_1kbwindow_new.csv.summary_RDC_piRNAclusters", header=T)
 
 count$newrepeatID <- factor(count$newrepeatID, 
                             levels=c("piRNA_cluster_20A","piRNA_cluster_flamenco","piRNA_cluster_42AB","piRNA_cluster_80F","piRNA_cluster_38C1","piRNA_cluster_38C2"), 
                             labels = c("20A","flamenco","42AB","80F","38C1","38C2"))
 
-#RDC
+# for (A) RDC
 count$protein <- factor(count$protein,
                         levels = c("Rhino_1", "Deadlock","Cutoff"),
                         labels = c("Rhino", "Deadlock","Cutoff"))
 
 #OR
-#Rhi_Moon
+#for (B) Rhi_Moon
 count$protein <- factor(count$protein,
                         levels = c("Rhino_2", "Moonshiner"),
                         labels = c("Rhino", "Moonshiner"))

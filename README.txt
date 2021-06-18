@@ -8,7 +8,7 @@ In this paper, we show that complex satDNAs (>100-bp repeat units) are transcrib
 
 Please direct questions to Xiaolu Wei at xiaolu_wei@urmc.rochester.edu or Amanda Larracuente at alarracu@bio.rochester.edu, or code author in each script.
 
-We organize data files and scripts according to the figures or supplementary files in Wei et al. 2020. 
+We organize the data files and scripts in this repository according to the figures or supplementary files in Wei et al. 2020. 
 
 We also include scripts and general data files that are not associated with specific figures, including:
 #count.sh: bash script used to count and extract reads that mapped to repeats from alignment files.
@@ -17,5 +17,6 @@ We also include scripts and general data files that are not associated with spec
 #dmel_scaffold2_plus0310_rm_for_htseq.gff3: repeat annotation file for our heterochromatin enriched assembly from Chang and Larracuente 2019 (https://doi.org/10.1534/genetics.118.301765).
 #different.1pt688.anaylsis: We performed analysis of the 1.688 satDNA repeats for ChIP-seq, RIP-seq and RNA-seq data in different ways to make sure that different analysis methods do not affect our conclusions. The results for the different analysis methods are organized by data type in this folder.
 
+Usage: Please see scripts for usage instructions.
 
 

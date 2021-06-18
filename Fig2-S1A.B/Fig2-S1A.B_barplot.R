@@ -1,4 +1,8 @@
+############
+#R script to make Figure 2-figure supplement 1A-B. Plot showing small RNA levels 
+#in RPM (reads per million) in different tissues for 1.688 and Rsp.
 #author: Xiaolu Wei (xiaolu_wei@urmc.rochester.edu)
+############
 
 library(ggplot2)
 library(dplyr)
